@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Masuk | Portal SMA Negeri 2 Siborongborong</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="lg">
+  <div class="panel lgcard">
+    <h1>Masuk ke portal</h1>
+    <p class="sub">Gunakan NIS (siswa) atau NIP (guru).</p>
+    <form id="f">
+      <label for="role">Masuk sebagai
+        <select id="role"><option value="siswa">Siswa</option><option value="guru">Guru</option></select>
+      </label>
+      <label for="uid">NIS / NIP <input type="text" id="uid" inputmode="numeric" autocomplete="username" required></label>
+      <label for="pw">Kata sandi <input type="password" id="pw" autocomplete="current-password" required></label>
+      <label class="cb"><input type="checkbox" id="show"> Tampilkan kata sandi</label>
+      <p id="err" role="alert"></p>
+      <button class="btn" type="submit">Masuk</button>
+    </form>
+    <details class="demo"><summary>Akun contoh untuk mencoba</summary>
+      <p>Siswa: 12345 / siswa123<br>Guru (Matematika): 198001 / guru123<br>Guru (Fisika): 198002 / guru123</p>
+    </details>
+  </div>
+</main>
+<script src="auth.js"></script>
+<script src="login.js"></script>
+</body>
+</html>

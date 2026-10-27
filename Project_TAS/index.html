@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portal SMA Negeri 2 Siborongborong</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap">
+<script src="auth.js"></script>
+<script>wajibLogin();</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="bar"><a class="logo" href="#atas">🏫 SMAN 2 Siborongborong</a>
+<nav aria-label="Menu utama"><a href="#jadwal">Jadwal</a><a href="#pengumuman">Pengumuman</a><a href="#agenda">Agenda</a><a href="nilai.html">Nilai</a><a href="#kontak">Kontak</a></nav><div class="ub"><span id="userBox"></span><button class="chip" id="logout">Keluar</button></div></div></header>
+<main id="atas">
+<div class="hero">
+<div><h1>Sistem Informasi Akademik SMA Negeri 2 Siborongborong</h1>
+<p>Cek jadwal pelajaran, nilai, pengumuman terbaru, dan agenda sekolah di satu tempat. Terbuka untuk semua siswa dan guru.</p></div>
+<div class="today" aria-live="polite"><div class="row" style="margin:0 0 6px"><label for="kelasHero"><small>Kelas</small></label><select id="kelasHero"></select></div>
+<h3 id="hDay"></h3><small id="hNote"></small><ul class="sl" id="hList"></ul></div>
+</div>
+
+<section id="jadwal"><h2>Jadwal pelajaran</h2><p class="sub">Pilih kelas dan hari untuk melihat jam serta mata pelajaran.</p>
+<div class="row"><label for="kelas"><small>Kelas</small></label><select id="kelas"></select><span id="dayChips" class="row" style="margin:0"></span></div>
+<div class="panel"><ul class="sl" id="jList" style="margin:0"></ul></div></section>
+
+<section id="pengumuman"><h2>Pengumuman</h2><p class="sub">Ketuk judul untuk membaca isi lengkap.</p>
+<div class="row"><input type="search" id="q" placeholder="Cari pengumuman" aria-label="Cari pengumuman"><span id="catChips" class="row" style="margin:0"></span></div>
+<div id="news"></div></section>
+
+<section id="agenda"><h2>Agenda sekolah</h2><p class="sub">Kegiatan yang akan datang.</p><div class="ag" id="ag"></div></section>
+
+<section id="kontak"><h2>Kontak</h2><p class="sub">Siborongborong, Kabupaten Tapanuli Utara (isi alamat lengkap sekolah). Layanan tata usaha: Senin–Jumat, 07.00–15.00.</p>
+<div class="kg" id="kg"></div></section>
+</main>
+<footer>© 2026 SMA Negeri 2 Siborongborong. Data pada halaman ini adalah contoh dan dapat disesuaikan.</footer>
+<script src="script.js"></script>
+</body>
+</html>
